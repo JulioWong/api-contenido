@@ -74,7 +74,6 @@ public class NotaService {
 		return convertidor.convertidorLista(repositorio.findByTitulo(titulo));
 	}
 	
-	
 	public List<MNota> obtenerPorPaginacion(Pageable pageable) {
 		return convertidor.convertidorLista(repositorio.findAll(pageable).getContent());
 	}
