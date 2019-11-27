@@ -1,10 +1,10 @@
 package com.wong.configuration;
 
-public class Usuario {
+public class Usuario{
 	
 	private String usuario;
 	private String contrasena;
-	
+
 	public String getUsuario() {
 		return usuario;
 	}

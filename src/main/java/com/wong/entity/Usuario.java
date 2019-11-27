@@ -1,5 +1,7 @@
 package com.wong.entity;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,12 +9,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table
-public class Usuario {
+@Table(name="usuario")
+public class Usuario implements Serializable{
 
 	@GeneratedValue
 	@Id
-	@Column(name="id")
+	@Column(name="id", unique = true)
 	private long id;
 	
 	@Column(name="usuario", unique = true)
